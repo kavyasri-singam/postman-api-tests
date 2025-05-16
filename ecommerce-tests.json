@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "23912e82-b4ab-42b4-85a5-59e7df84c4b0",
+		"name": "E-commerce API Tests.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44990374",
+		"_collection_link": "https://kavyasri-7530289.postman.co/workspace/kavya-sri's-Workspace~fd5c3ab4-5f4b-4d91-8f87-1b51b87512b5/collection/44990374-23912e82-b4ab-42b4-85a5-59e7df84c4b0?action=share&source=collection_link&creator=44990374"
+	},
+	"item": [
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test Product\",\r\n  \"price\": 29.99,\r\n  \"description\": \"A new test product\",\r\n  \"image\": \"https://i.pravatar.cc\",\r\n  \"category\": \"electronics\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/1\n",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"1\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Test Product\",\r\n  \"price\": 39.99,\r\n  \"description\": \"Updated description\",\r\n  \"image\": \"https://i.pravatar.cc\",\r\n  \"category\": \"electronics\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://fakestoreapi.com/products/7",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://fakestoreapi.com/products/6",
+					"protocol": "https",
+					"host": [
+						"fakestoreapi",
+						"com"
+					],
+					"path": [
+						"products",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
