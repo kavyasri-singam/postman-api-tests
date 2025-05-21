@@ -19,8 +19,9 @@ This project automates key E-commerce API operations using **Postman** and runs 
 
 ## 🚀 How to Run
 
-1. Install Newman globally (if not already):
-npm install -g newman
+1. Install Newman globally
+2. npm install -g newman
+
 
 Run the collection:
 newman run ecommerce-tests.json
